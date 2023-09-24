@@ -1,0 +1,6 @@
+github.com/jritsema/gotoolbox v0.7.0 h1:pvEf4VnB/Gjf/UYoq8T6f9vnIb7ssteGlFJEXg0Ejpo=
+github.com/jritsema/gotoolbox v0.7.0/go.mod h1:OgV4sjpMB/bx/ZZPpXWvfalGrniFvkvGtqFRQH6GGHY=
+github.com/jritsema/gotoolbox v0.8.0 h1:guUvlilrUcT24i0iGnasLch6pjWJ437Qnabk6WTmPEU=
+github.com/jritsema/gotoolbox v0.8.0/go.mod h1:OgV4sjpMB/bx/ZZPpXWvfalGrniFvkvGtqFRQH6GGHY=
+golang.org/x/text v0.13.0 h1:ablQoSUd0tRdKxZewP80B+BaqeKJuVhuRxj/dkrun3k=
+golang.org/x/text v0.13.0/go.mod h1:TvPlkZtksWOMsz7fbANvkp4WM8x/WCo/om8BMLbz+aE=

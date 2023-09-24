@@ -1,0 +1,40 @@
+
+<div id="modal" _="on closeModal add .closing then wait for animationend then remove me">
+	<div class="modal-underlay" _="on click trigger closeModal"></div>
+    
+
+    <div class="modal-content font-sans gap-5 w-120">        
+        <div class="w-full text-center text-gray-900 text-xl font-medium leading-normal">Log symptoms</div>
+        <div class="h-6"></div>
+        
+        <form id="diagnosis">
+            <div class="w-full gap-3 columns-2 px-20">
+                <div class="font-sans">Date</div>
+                <input type="date" name="date">
+            </div>
+
+            <div class="h-2"></div>
+            <div class="w-full gap-3 columns-2 px-20">
+                <div class="font-sans">Showing symptoms?</div>
+                <input type="checkbox" name="allergic">
+            </div>
+        </form>
+        <div class="h-6"></div>
+
+        <div class="w-full gap-3 columns-2">
+            <button class="w-full px-4 py-2 bg-white rounded-md shadow border border-gray-300 justify-center items-center flex"  _="on click trigger closeModal">
+                <div class="text-gray-700 text-sm font-medium font-sans leading-tight">Cancel</div>
+            </button>
+        
+            <button class="w-full px-4 py-2 bg-indigo-600 rounded-md shadow justify-center items-center flex"
+                _="on click trigger closeModal"
+                hx-post="/add-diagnosis"
+                hx-target="#main-page"
+                hx-include="#diagnosis *">
+                <div class="text-white text-sm font-medium font-sans leading-tight">
+                    Log
+                </div>
+            </button>
+        </div>
+    </div>
+</div> 

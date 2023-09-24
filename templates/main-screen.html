@@ -1,0 +1,28 @@
+<div class="w-full h-60 bg-indigo-600"></div>
+<div class="flex flex-row justify-center object-center gap-2.5 -mt-24">
+  <div class="rounded-lg bg-white w-96 h-96 px-8 py-6 ">
+    <div class="self-stretch text-gray-800 text-2xl font-extrabold leading-10">Your symptoms correlate best with pollen peaks of:</div>
+    <div class="text-indigo-600 text-3xl font-extrabold leading-10">{{.Allergies}}</div>
+    <div class="h-30"></div>
+    <div class="w-full flex justify-center">
+      <button hx-get="add-diagnosis" hx-target="body" hx-swap="beforeend">
+        <div class="w-14 h-14 bg-indigo-700 rounded-lg shadow">
+          <div class="w-6 h-6 p-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+          </div>          
+        </div>
+      </button>
+    </div>
+  </div>
+  <div class="rounded-lg bg-white w-72 h-96 px-8 py-6">
+    <div>
+      <tbody id="table-body">
+        {{range .Observations}}
+          {{template "observation.html".}}
+        {{end}}
+      </tbody>
+    </div>
+  </div>
+</div>

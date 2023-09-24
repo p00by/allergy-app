@@ -1,0 +1,12 @@
+<div class="self-stretch h-20 flex-col justify-start items-start flex">
+    <div class="self-stretch py-4 justify-start items-start gap-3 inline-flex">
+    <div class="w-6 h-6 {{if .Allergic}} bg-indigo-400 {{else}} bg-red-400 {{end}} rounded-xl">
+    </div>
+    <div class="grow shrink basis-0 flex-col justify-start items-start gap-1 inline-flex">
+        <div class="self-stretch justify-between items-center inline-flex">
+            <div class="text-gray-900 text-sm font-medium leading-tight">{{ .Date.Format "02 Sep" }}</div>
+            </div>
+            <div class="self-stretch text-gray-500 text-sm font-normal leading-tight">Symptoms logged</div>
+        </div>
+    </div>
+</div>
